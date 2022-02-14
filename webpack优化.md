@@ -50,3 +50,16 @@
     };
   ```
   
+ ### 4.多进程打包
+- HappyPack：多进程方式运行资源加载逻辑(https://github.com/amireh/happypack)，（不在维护）
+- Thread-loader：Webpack 官方出品，同样以多进程方式运行资源加载逻辑
+- TerserWebpackPlugin：支持多进程方式执行代码压缩、uglify 功能
+- Parallel-Webpack：多进程方式运行多个 Webpack 构建实例
+
+### 其他
+- 配置 resolve 控制资源搜索范围
+- 针对 npm 包设置 module.noParse 跳过编译步骤
+- 配置 module.rules.exclude 或 module.rules.include 降低 Loader 工作量
+- 配置 watchOption.ignored 减少监听文件数量
+- 优化 ts 类型检查逻辑
+- 慎重选择 source-map 值  
