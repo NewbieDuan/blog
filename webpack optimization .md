@@ -19,8 +19,9 @@
 - cache.cacheDirectory：缓存文件存放的路径，默认为 node_modules/.cache/webpack
 - cache.buildDependencies：额外的依赖文件，当这些文件内容发生变化时，缓存会完全失效而执行完整的编译构建，通常可设置为项目配置文件
 
-在 Webpack 4 及之前版本中可以使用一些 loader 自带的缓存功能提升构建性能，例如 babel-loader、eslint-loader、cache-loadermodule.exports = {
- ```javascript
+在 Webpack 4 及之前版本中可以使用一些 loader 自带的缓存功能提升构建性能，例如 babel-loader、eslint-loader、cache-loader
+```javascript
+module.exports = {
     //babel-loader、eslint-loader
     // ...
     module: {
